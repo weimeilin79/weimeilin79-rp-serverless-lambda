@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        .row {
+            display: flex;
+            justify-content: space-around;
+        }
+        .chart-container {
+            width: 45%;
+        }
+        canvas {
+            width: 100% !important;
+            height: auto !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>WCW Ticket Sales</h1> 
+    <div style="text-align: center;">
+        <img src="lambda.gif" alt="Loading..." style="margin: 20px auto; display: block;">
+    </div>
+    <div>
+        <canvas id="totalSalesChart"></canvas>
+    </div>
+    <div class="row">
+        <div class="chart-container">
+            <canvas id="paymentMethodChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="deviceTypeChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
